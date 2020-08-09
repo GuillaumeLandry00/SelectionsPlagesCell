@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head lang="fr">
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="data:," type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <title>Sélection plage de cellules</title>
+    <style>
+      #grille-container {
+        margin: 5% 10%;
+      }
+
+      #grille {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        user-select: none;
+      }
+
+      #grille td,
+      #grille th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #grille tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #grille tr:hover {
+        background-color: #ddd;
+      }
+
+      #grille th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4caf50;
+        color: white;
+      }
+      #grille td.selected {
+        background-color: #927de0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Sélection plage de cellules</h1>
+    </header>
+    <main>
+      <div id="grille-container">
+        <table id="grille">
+          <tr>
+            <th>Lorem</th>
+            <th>ipsum</th>
+            <th>dolor</th>
+            <th>sit</th>
+            <th>amet</th>
+            <th>consectetur</th>
+            <th>adipiscing</th>
+            <th>elit</th>
+          </tr>
+          <tr>
+            <td>sed</td>
+            <td>do</td>
+            <td>eiusmod</td>
+            <td>tempor</td>
+            <td>incididunt</td>
+            <td>ut</td>
+            <td>labore</td>
+            <td>et</td>
+          </tr>
+          <tr>
+            <td>dolore</td>
+            <td>magna</td>
+            <td>aliqua</td>
+            <td>Ut</td>
+            <td>enim</td>
+            <td>ad</td>
+            <td>minim</td>
+            <td>veniam</td>
+          </tr>
+          <tr>
+            <td>quis</td>
+            <td>nostrud</td>
+            <td>exercitation</td>
+            <td>ullamco</td>
+            <td>laboris</td>
+            <td>nisi</td>
+            <td>ut</td>
+            <td>aliquip</td>
+          </tr>
+          <tr>
+            <td>ex</td>
+            <td>ea</td>
+            <td>commodo</td>
+            <td>consequat</td>
+            <td>Duis</td>
+            <td>aute</td>
+            <td>irure</td>
+            <td>dolor</td>
+          </tr>
+          <tr>
+            <td>in</td>
+            <td>reprehenderit</td>
+            <td>in</td>
+            <td>voluptate</td>
+            <td>velit</td>
+            <td>esse</td>
+            <td>cillum</td>
+            <td>dolore</td>
+          </tr>
+          <tr>
+            <td>eu</td>
+            <td>fugiat</td>
+            <td>nulla</td>
+            <td>pariatur</td>
+            <td>Excepteur</td>
+            <td>sint</td>
+            <td>occaecat</td>
+            <td>cupidatat</td>
+          </tr>
+          <tr>
+            <td>non</td>
+            <td>proident</td>
+            <td>sunt</td>
+            <td>in</td>
+            <td>culpa</td>
+            <td>qui</td>
+            <td>officia</td>
+            <td>deserunt</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
